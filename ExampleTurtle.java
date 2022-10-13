@@ -26,8 +26,8 @@ public class ExampleTurtle extends BaseTurtle {
 		this.setDelay(20);  // Use a shorter delay so it draws faster.
 		pen.setColor(0,0,0);
 		for (int i = 0; i < 60; i++) {
-			this.square(7);	// Draw a square (NOT a built-in turtle command; t's defined later in this file!).
-			this.turn(6);  	// Turn 6 degrees before drawing the next square.
+			this.square(2);	// Draw a square (NOT a built-in turtle command; t's defined later in this file!).
+			this.turn(10);  	// Turn 6 degrees before drawing the next square.
 		}
 
 		this.pause(2); 	// pause for two seconds
@@ -61,3 +61,4 @@ public class ExampleTurtle extends BaseTurtle {
 
 	
 }
+

@@ -43,9 +43,9 @@ public class Pen {
     }
     
     public void setRandomColor() {
-      this.r = (int) (256 * Math.random());
-          this.g = (int) (256 * Math.random());
-          this.b = (int) (256 * Math.random());
+        this.r = (int) (256 * Math.random());
+        this.g = (int) (256 * Math.random());
+        this.b = (int) (256 * Math.random());
     }
     
     public void setStrokeWidth(double width) {

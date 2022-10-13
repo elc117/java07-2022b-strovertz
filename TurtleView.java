@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.geom.Path2D;
 import java.awt.image.BufferedImage;
+import java.nio.file.Path;
 
 import javax.swing.*;
 
@@ -112,8 +113,11 @@ class SwingTurtleView extends TurtleView {
       double turtleX = turtle.getX();
       double turtleY = turtle.getY();
       Graphics2D g2 = (Graphics2D) g;
+      String a = "./turtle.png";
+      ImageIcon icon = new ImageIcon(a);
+      //Path.setIcon("./turtle.png");
       g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-      g2.setColor(new Color(30, 30, 30, 130)); // somewhat transparent dark gray
+      g2.setColor(new Color(45, 30, 30, 130)); // somewhat transparent dark gray
       Path2D path = new Path2D.Double();
       double rad = turtle.getFacing() / 180 * Math.PI;
       double dx = Math.cos(rad);
@@ -125,5 +129,4 @@ class SwingTurtleView extends TurtleView {
       g2.fill(path);
     }
   }
-
 }

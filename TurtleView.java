@@ -2,7 +2,6 @@ import java.awt.*;
 import java.awt.geom.Path2D;
 import java.awt.image.BufferedImage;
 import java.nio.file.Path;
-
 import javax.swing.*;
 
 public abstract class TurtleView {
